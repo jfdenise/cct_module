@@ -11,7 +11,7 @@ labels:
 - name: io.openshift.s2i.destination
   value: "/tmp"
 - name: org.jboss.container.deployments-dir
-  value: "/deployments"
+  value: "/opt/eap/standalone/deployments"
 
 envs:
 - name: S2I_DESTINATION_DIR
@@ -78,7 +78,7 @@ envs:
     Absolute path to which files located in
     $S2I_SOURCE_DIR/$S2I_SOURCE_DEPLOYMENTS_DIR are copied. Additionally, this
     is the directory to which build output is copied
-  example: /deployments
+  example: /opt/eap/standalone/deployments
 
 - name: S2I_IMAGE_SOURCE_MOUNTS
   description: ^
