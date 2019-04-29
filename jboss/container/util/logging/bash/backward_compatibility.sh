@@ -14,6 +14,6 @@ LAUNCH_DIR=${LAUNCH_DIR:-$BIN_HOME/bin/launch}
 mkdir -pm 775 ${LAUNCH_DIR}
 ln -s /opt/jboss/container/util/logging/logging.sh ${LAUNCH_DIR}/logging.sh
 
-chown -R jboss:root ${LAUNCH_DIR}
+chown -R 1001:0 ${LAUNCH_DIR}
 chmod -R ug+rwX ${LAUNCH_DIR}
 

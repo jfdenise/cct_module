@@ -5,4 +5,4 @@ set -e
 # Legacy location
 
 ln -s /opt/jboss/container/jolokia /opt/jolokia
-chown -h jboss:root /opt/jolokia
+chown -h 1001:0 /opt/jolokia

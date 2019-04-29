@@ -6,4 +6,4 @@ set -e
 mkdir -p /opt/run-java
 ln -s /opt/jboss/container/java/proxy/* /opt/run-java
 
-chown -R jboss:root /opt/run-java
+chown -R 1001:0 /opt/run-java
